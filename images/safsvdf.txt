@@ -1,0 +1,48 @@
+ Private Sub PCupdate_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim query As String
+        query = "select pcid from pokecenter order by pcid"
+        Try
+
+            Dim rs As SqlDataAdapter
+            rs = New SqlDataAdapter(query, con)
+            Dim dt1 As New DataTable
+            rs.Fill(dt1)
+
+            Dim n, i As Integer
+            n = dt1.Rows.Count
+
+            For i = 0 To n - 1
+                ComboBox1.Items.Add(dt1.Rows(i).Item(0))
+            Next
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+
+
+
+
+
+Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        Dim query As String
+        query = "select * from pokecenter where pcid = '" & ComboBox1.Text & "'"
+        Try
+
+            Dim rs As SqlDataAdapter
+            rs = New SqlDataAdapter(query, con)
+            Dim dt1 As New DataTable
+            rs.Fill(dt1)
+
+            Dim n As Integer
+            n = dt1.Rows.Count
+
+            TextBox2.Text = dt1.Rows(0).Item(1)
+            TextBox3.Text = dt1.Rows(0).Item(2)
+            TextBox4.Text = dt1.Rows(0).Item(3)
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub

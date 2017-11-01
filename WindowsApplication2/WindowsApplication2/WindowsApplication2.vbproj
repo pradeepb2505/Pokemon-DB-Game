@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E88A3FF8-4C67-404D-8BF3-716063E3CD82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication2.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication2</RootNamespace>
+    <AssemblyName>WindowsApplication2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApplication2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApplication2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameBROCK.Designer.vb">
+      <DependentUpon>GameBROCK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GameBROCK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameMYSTICAL.Designer.vb">
+      <DependentUpon>GameMYSTICAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GameMYSTICAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameIntro.Designer.vb">
+      <DependentUpon>GameIntro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GameIntro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PSupdate.Designer.vb">
+      <DependentUpon>PSupdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PSupdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PSadd.Designer.vb">
+      <DependentUpon>PSadd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PSadd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PStop.Designer.vb">
+      <DependentUpon>PStop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PStop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gupdate.Designer.vb">
+      <DependentUpon>Gupdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gupdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gadd.Designer.vb">
+      <DependentUpon>Gadd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gadd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gym.Designer.vb">
+      <DependentUpon>Gym.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Gym.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PCupdate.Designer.vb">
+      <DependentUpon>PCupdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PCupdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PCadd.Designer.vb">
+      <DependentUpon>PCadd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PCadd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PokeCenter.Designer.vb">
+      <DependentUpon>PokeCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PokeCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pokemon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pokemon.Designer.vb">
+      <DependentUpon>Pokemon.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Padd.Designer.vb">
+      <DependentUpon>Padd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Padd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pdelete.Designer.vb">
+      <DependentUpon>Pdelete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pdelete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pupdate.Designer.vb">
+      <DependentUpon>Pupdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pupdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.vb">
+      <DependentUpon>Start.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Start.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameASH.Designer.vb">
+      <DependentUpon>GameASH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GameASH.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainer.Designer.vb">
+      <DependentUpon>Trainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Trainer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tadd.Designer.vb">
+      <DependentUpon>Tadd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tadd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tupdate.Designer.vb">
+      <DependentUpon>Tupdate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tupdate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GameBROCK.resx">
+      <DependentUpon>GameBROCK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameIntro.resx">
+      <DependentUpon>GameIntro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameMYSTICAL.resx">
+      <DependentUpon>GameMYSTICAL.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gadd.resx">
+      <DependentUpon>Gadd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gupdate.resx">
+      <DependentUpon>Gupdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gym.resx">
+      <DependentUpon>Gym.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PCadd.resx">
+      <DependentUpon>PCadd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PCupdate.resx">
+      <DependentUpon>PCupdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokeCenter.resx">
+      <DependentUpon>PokeCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pokemon.resx">
+      <DependentUpon>Pokemon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Padd.resx">
+      <DependentUpon>Padd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pdelete.resx">
+      <DependentUpon>Pdelete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSadd.resx">
+      <DependentUpon>PSadd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PStop.resx">
+      <DependentUpon>PStop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PSupdate.resx">
+      <DependentUpon>PSupdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pupdate.resx">
+      <DependentUpon>Pupdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameASH.resx">
+      <DependentUpon>GameASH.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trainer.resx">
+      <DependentUpon>Trainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tadd.resx">
+      <DependentUpon>Tadd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tupdate.resx">
+      <DependentUpon>Tupdate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
